@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EcoCircuit - La Decisión Final</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header>
+
+            <h1>♻️ EcoCircuit</h1>
+
+            <h2>La Decisión Final</h2>
+
+            <p>
+                Tú decides el futuro de la ciudad.
+            </p>
+
+        </header>
+
+
+        <section class="stats">
+
+            <span>⭐ Puntos:
+                <b id="points">0</b>
+            </span>
+
+            <span>⚡ XP:
+                <b id="xp">0</b>
+            </span>
+
+            <span>💰 Presupuesto:
+                $<b id="money">1000</b>
+            </span>
+
+            <span>🌫️ Contaminación:
+                <b id="pollution">50</b>%
+            </span>
+
+            <span>😊 Ciudadanos:
+                <b id="happiness">50</b>%
+            </span>
+
+        </section>
+
+
+        <section class="story">
+
+            <p id="level">
+                Nivel 1
+            </p>
+
+            <h2 id="title">
+                El problema comienza
+            </h2>
+
+            <p id="storyText">
+                Una gran cantidad de basura electrónica
+                está apareciendo en la ciudad.
+            </p>
+
+        </section>
+
+
+        <section id="choices">
+
+        </section>
+
+
+        <section id="feedback">
+
+        </section>
+
+
+        <button
+            id="nextButton"
+            onclick="nextLevel()"
+            style="display:none">
+
+            ➡️ Continuar
+
+        </button>
+
+
+        <div id="gameOver">
+
+        </div>
+
+    </main>
+
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
